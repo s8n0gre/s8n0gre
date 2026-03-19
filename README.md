@@ -133,12 +133,12 @@ if __name__ == "__main__":
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/s8n0gre/s8n0gre/output/pacman-dark.svg" />
+    srcset="https://raw.githubusercontent.com/s8n0gre/s8n0gre/output/pacman-contribution-graph-dark.svg" />
   <source media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/s8n0gre/s8n0gre/output/pacman.svg" />
+    srcset="https://raw.githubusercontent.com/s8n0gre/s8n0gre/output/pacman-contribution-graph.svg" />
   <img
     alt="pacman devouring contributions"
-    src="https://raw.githubusercontent.com/s8n0gre/s8n0gre/output/pacman.svg"
+    src="https://raw.githubusercontent.com/s8n0gre/s8n0gre/output/pacman-contribution-graph.svg"
     width="100%" />
 </picture>
 
