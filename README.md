@@ -11,7 +11,7 @@
 ```python
 class s8n0gre:
     role       = "Software Engineering Student"
-    languages  = ["C++", "Java", "Python", "JavaScript"]
+    languages  = ["Java", "Python", "JavaScript"]
     focus      = ["Data Structures", "Algorithms", "System Design"]
     mindset    = "Chess-driven · Analytical · Relentless"
     goal       = "300+ DSA problems — 2026"
@@ -34,7 +34,7 @@ class s8n0gre:
 
 <div align="center">
   <h3>◈ &nbsp; Tech Stack &nbsp; ◈</h3>
-  <img src="https://skillicons.dev/icons?i=cpp,java,python,js,html,css,git,github,vscode&theme=dark&perline=9"/>
+  <img src="https://skillicons.dev/icons?i=java,python,js,html,css,git,github,vscode&theme=dark&perline=9"/>
 </div>
 
 ---
