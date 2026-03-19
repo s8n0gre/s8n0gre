@@ -10,7 +10,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=16&duration=2500&pause=900&color=39FF14&center=true&vCenter=true&width=560&height=38&lines=%24+whoami+--+s8n0gre;%24+status+--+always+learning;%24+mission+--+300%2B+DSA+problems+in+2026;%24+engine+--+chess-driven+thinking;%24+uptime+--+counting..." />
+<img src="https://raw.githubusercontent.com/s8n0gre/s8n0gre/main/dedsec_banner.svg" width="100%"/>
 
 </div>
 
