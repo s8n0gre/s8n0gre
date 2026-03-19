@@ -8,24 +8,330 @@
 
 </div>
 
-<div align="center">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520" width="860" height="520">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+      text { font-family: 'Share Tech Mono', 'Courier New', monospace; }
+    </style>
+    <!-- Scanline pattern -->
+    <pattern id="scan" x="0" y="0" width="860" height="4" patternUnits="userSpaceOnUse">
+      <rect width="860" height="2" fill="#00ff41" opacity="0.03"/>
+    </pattern>
+    <!-- Glow filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Matrix rain clip -->
+    <clipPath id="rain-clip">
+      <rect x="0" y="0" width="860" height="520"/>
+    </clipPath>
+  </defs>
 
-```
-╔══════════════════════════════════════════════════════════════════╗
-║  ██████╗ ██████╗ ███╗  ██╗ ██████╗  ██████╗ ██████╗ ███████╗  ║
-║  ██╔══╝ ██╔══██╗████╗ ██║██╔════╝ ██╔══██╗██╔══██╗██╔════╝  ║
-║  ███╗   ██████╔╝██╔██╗██║██║  ███╗██████╔╝██████╔╝█████╗    ║
-║  ██╔╝   ██╔═══╝ ██║╚████║██║   ██║██╔══██╗██╔══╝  ██╔══╝    ║
-║  ██║    ██║     ██║ ╚███║╚██████╔╝██║  ██║██║     ███████╗  ║
-║  ╚═╝    ╚═╝     ╚═╝  ╚══╝ ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚══════╝  ║
-╠══════════════════════════════════════════════════════════════════╣
-║  [ USER   ] → s8n0gre          [ STATUS ] → ONLINE             ║
-║  [ ROLE   ] → SWE Student      [ BUILD  ] → IN PROGRESS        ║
-║  [ FOCUS  ] → DSA / Systems    [ STREAK ] → ACTIVE             ║
-╚══════════════════════════════════════════════════════════════════╝
-```
+  <!-- Background -->
+  <rect width="860" height="520" fill="#050d05"/>
+  <!-- Subtle grid -->
+  <rect width="860" height="520" fill="url(#scan)"/>
 
-</div>
+  <!-- ─── MATRIX RAIN COLUMNS ─── -->
+  <g clip-path="url(#rain-clip)" opacity="0.18" filter="url(#glow2)">
+    <!-- col 1 -->
+    <text x="12" y="0" font-size="11" fill="#00ff41">
+      1<animate attributeName="y" from="-40" to="540" dur="3.1s" repeatCount="indefinite"/>
+    </text>
+    <text x="12" y="-80" font-size="11" fill="#00ff41">
+      0<animate attributeName="y" from="-120" to="460" dur="3.1s" repeatCount="indefinite"/>
+    </text>
+    <!-- col 2 -->
+    <text x="35" y="0" font-size="11" fill="#00ff41">
+      A<animate attributeName="y" from="-20" to="540" dur="2.4s" begin="0.6s" repeatCount="indefinite"/>
+    </text>
+    <text x="35" y="-60" font-size="11" fill="#00ff41">
+      F<animate attributeName="y" from="-100" to="460" dur="2.4s" begin="0.6s" repeatCount="indefinite"/>
+    </text>
+    <!-- col 3 -->
+    <text x="58" y="0" font-size="11" fill="#00ff41">
+      3<animate attributeName="y" from="-60" to="540" dur="3.8s" begin="1.2s" repeatCount="indefinite"/>
+    </text>
+    <!-- col 4 -->
+    <text x="810" y="0" font-size="11" fill="#00ff41">
+      9<animate attributeName="y" from="-30" to="540" dur="2.8s" begin="0.3s" repeatCount="indefinite"/>
+    </text>
+    <text x="810" y="-90" font-size="11" fill="#00ff41">
+      B<animate attributeName="y" from="-130" to="460" dur="2.8s" begin="0.3s" repeatCount="indefinite"/>
+    </text>
+    <!-- col 5 -->
+    <text x="835" y="0" font-size="11" fill="#00ff41">
+      7<animate attributeName="y" from="-50" to="540" dur="3.4s" begin="1.8s" repeatCount="indefinite"/>
+    </text>
+    <!-- col 6 -->
+    <text x="788" y="0" font-size="11" fill="#00ff41">
+      E<animate attributeName="y" from="-10" to="540" dur="2.2s" begin="0.9s" repeatCount="indefinite"/>
+    </text>
+    <text x="788" y="-80" font-size="11" fill="#00ff41">
+      2<animate attributeName="y" from="-120" to="460" dur="2.2s" begin="0.9s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- ─── OUTER BORDER BOX ─── -->
+  <!-- Draw with animated stroke-dashoffset for "drawing in" effect -->
+  <!-- Top line -->
+  <line x1="20" y1="18" x2="840" y2="18" stroke="#00ff41" stroke-width="1.2" opacity="0.9">
+    <animate attributeName="stroke-dasharray" from="0 1000" to="820 0" dur="0.6s" fill="freeze" begin="0.1s"/>
+  </line>
+  <!-- Bottom line -->
+  <line x1="20" y1="502" x2="840" y2="502" stroke="#00ff41" stroke-width="1.2" opacity="0.9">
+    <animate attributeName="stroke-dasharray" from="0 1000" to="820 0" dur="0.6s" fill="freeze" begin="0.3s"/>
+  </line>
+  <!-- Left line -->
+  <line x1="20" y1="18" x2="20" y2="502" stroke="#00ff41" stroke-width="1.2" opacity="0.9">
+    <animate attributeName="stroke-dasharray" from="0 600" to="484 0" dur="0.5s" fill="freeze" begin="0.5s"/>
+  </line>
+  <!-- Right line -->
+  <line x1="840" y1="18" x2="840" y2="502" stroke="#00ff41" stroke-width="1.2" opacity="0.9">
+    <animate attributeName="stroke-dasharray" from="0 600" to="484 0" dur="0.5s" fill="freeze" begin="0.5s"/>
+  </line>
+  <!-- Corner accents -->
+  <g fill="none" stroke="#00ff41" stroke-width="1.5">
+    <polyline points="20,18 20,18" opacity="0.9">
+      <animate attributeName="points" from="20,18 20,18 20,18" to="20,38 20,18 40,18" dur="0.3s" fill="freeze" begin="0.9s"/>
+    </polyline>
+    <polyline points="840,18 840,18" opacity="0.9">
+      <animate attributeName="points" from="840,18 840,18 840,18" to="820,18 840,18 840,38" dur="0.3s" fill="freeze" begin="0.9s"/>
+    </polyline>
+    <polyline points="20,502 20,502" opacity="0.9">
+      <animate attributeName="points" from="20,502 20,502 20,502" to="20,482 20,502 40,502" dur="0.3s" fill="freeze" begin="0.9s"/>
+    </polyline>
+    <polyline points="840,502 840,502" opacity="0.9">
+      <animate attributeName="points" from="840,502 840,502 840,502" to="820,502 840,502 840,482" dur="0.3s" fill="freeze" begin="0.9s"/>
+    </polyline>
+  </g>
+
+  <!-- ─── DIVIDER LINES ─── -->
+  <line x1="20" y1="162" x2="840" y2="162" stroke="#00ff41" stroke-width="0.8" opacity="0.5">
+    <animate attributeName="opacity" from="0" to="0.5" dur="0.2s" fill="freeze" begin="1.0s"/>
+  </line>
+  <line x1="20" y1="270" x2="840" y2="270" stroke="#00ff41" stroke-width="0.8" opacity="0.5">
+    <animate attributeName="opacity" from="0" to="0.5" dur="0.2s" fill="freeze" begin="1.6s"/>
+  </line>
+  <line x1="20" y1="390" x2="840" y2="390" stroke="#00ff41" stroke-width="0.8" opacity="0.5">
+    <animate attributeName="opacity" from="0" to="0.5" dur="0.2s" fill="freeze" begin="2.4s"/>
+  </line>
+
+  <!-- ─── s8n0gre ASCII BANNER ─── -->
+  <g filter="url(#glow)" fill="#00ff41" font-size="12.5" letter-spacing="0">
+    <text x="80" y="58" opacity="0">
+      ██████╗  █████╗ ███╗  ██╗ ██████╗  ██████╗ ██████╗ ███████╗
+      <animate attributeName="opacity" from="0" to="1" dur="0.15s" fill="freeze" begin="1.1s"/>
+    </text>
+    <text x="80" y="77" opacity="0">
+      ██╔════╝ ██╔══██╗████╗ ██║██╔═══██╗██╔════╝ ██╔══██╗██╔════╝
+      <animate attributeName="opacity" from="0" to="1" dur="0.15s" fill="freeze" begin="1.22s"/>
+    </text>
+    <text x="80" y="96" opacity="0">
+      ╚█████╗  ╚█████╔╝██╔██╗██║██║   ██║██║  ███╗██████╔╝█████╗
+      <animate attributeName="opacity" from="0" to="1" dur="0.15s" fill="freeze" begin="1.34s"/>
+    </text>
+    <text x="80" y="115" opacity="0">
+       ╚═══██╗ ██╔══██╗██║╚████║██║   ██║██║   ██║██╔══██╗██╔══╝
+      <animate attributeName="opacity" from="0" to="1" dur="0.15s" fill="freeze" begin="1.46s"/>
+    </text>
+    <text x="80" y="134" opacity="0">
+      ██████╔╝ ██║  ██║██║ ╚███║╚██████╔╝╚██████╔╝██║  ██║███████╗
+      <animate attributeName="opacity" from="0" to="1" dur="0.15s" fill="freeze" begin="1.58s"/>
+    </text>
+    <text x="80" y="153" opacity="0">
+      ╚═════╝  ╚═╝  ╚═╝╚═╝  ╚══╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝
+      <animate attributeName="opacity" from="0" to="1" dur="0.15s" fill="freeze" begin="1.70s"/>
+    </text>
+  </g>
+
+  <!-- ─── DEDSEC ASCII BANNER ─── -->
+  <g filter="url(#glow)" fill="#39ff14" font-size="12.5" letter-spacing="0">
+    <text x="108" y="192" opacity="0">
+      ██████╗ ███████╗██████╗ ███████╗███████╗ ██████╗
+      <animate attributeName="opacity" from="0" to="1" dur="0.15s" fill="freeze" begin="1.85s"/>
+    </text>
+    <text x="108" y="211" opacity="0">
+      ██╔══██╗██╔════╝██╔══██╗██╔════╝██╔════╝██╔════╝
+      <animate attributeName="opacity" from="0" to="1" dur="0.15s" fill="freeze" begin="1.97s"/>
+    </text>
+    <text x="108" y="230" opacity="0">
+      ██║  ██║█████╗  ██║  ██║███████╗█████╗  ██║
+      <animate attributeName="opacity" from="0" to="1" dur="0.15s" fill="freeze" begin="2.09s"/>
+    </text>
+    <text x="108" y="249" opacity="0">
+      ██║  ██║██╔══╝  ██║  ██║╚════██║██╔══╝  ██║
+      <animate attributeName="opacity" from="0" to="1" dur="0.15s" fill="freeze" begin="2.21s"/>
+    </text>
+    <text x="108" y="268" opacity="0">
+      ██████╔╝███████╗██████╔╝███████║███████╗╚██████╗
+      <animate attributeName="opacity" from="0" to="1" dur="0.15s" fill="freeze" begin="2.33s"/>
+    </text>
+  </g>
+
+  <!-- ─── BREACH SEQUENCE ─── -->
+  <g font-size="12" fill="#00ff41" font-family="'Share Tech Mono','Courier New',monospace">
+
+    <!-- Line 1 -->
+    <text x="44" y="302" opacity="0">
+      &gt;  BREACH INITIATED
+      <animate attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="2.6s"/>
+    </text>
+    <text x="380" y="302" opacity="0" fill="#00cc33">
+      ........................................
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="2.7s"/>
+    </text>
+    <text x="748" y="302" opacity="0" fill="#00ff41" filter="url(#glow2)">
+      [OK]
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.1s" fill="freeze" begin="3.0s"/>
+    </text>
+
+    <!-- Line 2 -->
+    <text x="44" y="322" opacity="0">
+      &gt;  TARGET SYSTEM  ........ github.com/s8n0gre
+      <animate attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="3.1s"/>
+    </text>
+    <text x="672" y="322" opacity="0" fill="#00cc33">
+      ............
+      <animate attributeName="opacity" from="0" to="1" dur="0.2s" fill="freeze" begin="3.2s"/>
+    </text>
+    <text x="748" y="322" opacity="0" fill="#00ff41" filter="url(#glow2)">
+      [OK]
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.1s" fill="freeze" begin="3.4s"/>
+    </text>
+
+    <!-- Line 3 -->
+    <text x="44" y="342" opacity="0">
+      &gt;  FIREWALL STATUS ........ BYPASSED
+      <animate attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="3.5s"/>
+    </text>
+    <text x="596" y="342" opacity="0" fill="#00cc33">
+      ...........................
+      <animate attributeName="opacity" from="0" to="1" dur="0.2s" fill="freeze" begin="3.6s"/>
+    </text>
+    <text x="748" y="342" opacity="0" fill="#00ff41" filter="url(#glow2)">
+      [OK]
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.1s" fill="freeze" begin="3.8s"/>
+    </text>
+
+    <!-- Line 4 -->
+    <text x="44" y="362" opacity="0">
+      &gt;  IDENTITY MASK  ........ ACTIVE
+      <animate attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="3.9s"/>
+    </text>
+    <text x="568" y="362" opacity="0" fill="#00cc33">
+      .....................................
+      <animate attributeName="opacity" from="0" to="1" dur="0.2s" fill="freeze" begin="4.0s"/>
+    </text>
+    <text x="748" y="362" opacity="0" fill="#00ff41" filter="url(#glow2)">
+      [OK]
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.1s" fill="freeze" begin="4.2s"/>
+    </text>
+
+    <!-- Line 5 -->
+    <text x="44" y="382" opacity="0">
+      &gt;  CTOS ACCESS    ........ ROOT GRANTED
+      <animate attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="4.3s"/>
+    </text>
+    <text x="610" y="382" opacity="0" fill="#00cc33">
+      .................................
+      <animate attributeName="opacity" from="0" to="1" dur="0.2s" fill="freeze" begin="4.4s"/>
+    </text>
+    <text x="748" y="382" opacity="0" fill="#00ff41" filter="url(#glow2)">
+      [OK]
+      <animate attributeName="opacity" from="0" to="0.9" dur="0.1s" fill="freeze" begin="4.6s"/>
+    </text>
+  </g>
+
+  <!-- ─── OPERATOR TABLE ─── -->
+  <g font-size="12" fill="#00ff41" font-family="'Share Tech Mono','Courier New',monospace">
+
+    <!-- OPERATOR -->
+    <text x="44" y="418" opacity="0">
+      OPERATOR
+      <animate attributeName="opacity" from="0" to="0.7" dur="0.1s" fill="freeze" begin="4.8s"/>
+    </text>
+    <text x="160" y="418" opacity="0" fill="#005500">
+      ──────────────────────────────────────────────────
+      <animate attributeName="opacity" from="0" to="1" dur="0.25s" fill="freeze" begin="4.85s"/>
+    </text>
+    <text x="720" y="418" opacity="0" filter="url(#glow2)">
+      s8n0gre
+      <animate attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="5.1s"/>
+    </text>
+
+    <!-- FACTION -->
+    <text x="44" y="436" opacity="0">
+      FACTION
+      <animate attributeName="opacity" from="0" to="0.7" dur="0.1s" fill="freeze" begin="5.1s"/>
+    </text>
+    <text x="160" y="436" opacity="0" fill="#005500">
+      ──────────────────────────────────────────────────
+      <animate attributeName="opacity" from="0" to="1" dur="0.25s" fill="freeze" begin="5.15s"/>
+    </text>
+    <text x="720" y="436" opacity="0">
+      INDEPENDENT
+      <animate attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="5.4s"/>
+    </text>
+
+    <!-- MISSION -->
+    <text x="44" y="454" opacity="0">
+      MISSION
+      <animate attributeName="opacity" from="0" to="0.7" dur="0.1s" fill="freeze" begin="5.4s"/>
+    </text>
+    <text x="160" y="454" opacity="0" fill="#005500">
+      ──────────────────────────────────────────────────
+      <animate attributeName="opacity" from="0" to="1" dur="0.25s" fill="freeze" begin="5.45s"/>
+    </text>
+    <text x="720" y="454" opacity="0">
+      DSA x SYSTEMS
+      <animate attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="5.7s"/>
+    </text>
+
+    <!-- THREAT -->
+    <text x="44" y="472" opacity="0">
+      THREAT
+      <animate attributeName="opacity" from="0" to="0.7" dur="0.1s" fill="freeze" begin="5.7s"/>
+    </text>
+    <text x="160" y="472" opacity="0" fill="#005500">
+      ──────────────────────────────────────────────────
+      <animate attributeName="opacity" from="0" to="1" dur="0.25s" fill="freeze" begin="5.75s"/>
+    </text>
+    <text x="720" y="472" opacity="0">
+      TO BUGS ONLY
+      <animate attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="6.0s"/>
+    </text>
+  </g>
+
+  <!-- ─── WARNING LINES ─── -->
+  <g font-size="11" font-family="'Share Tech Mono','Courier New',monospace">
+    <text x="44" y="492" fill="#ff4444" opacity="0">
+      [ WRN ]  Do not attempt to trace this connection. All activity is logged.
+      <animate attributeName="opacity" from="0" to="0.85" dur="0.4s" fill="freeze" begin="6.1s"/>
+      <!-- Pulse -->
+      <animate attributeName="opacity" from="0.85" to="0.3" dur="1.4s" repeatCount="indefinite" begin="7s"/>
+    </text>
+  </g>
+
+  <!-- ─── BLINKING CURSOR ─── -->
+  <rect x="44" y="298" width="7" height="13" fill="#00ff41">
+    <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite" begin="6.5s"/>
+    <animate attributeName="x" from="44" to="750" dur="4s" fill="freeze" begin="2.6s"/>
+    <!-- after typing done, park cursor at end -->
+    <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite" begin="6.5s"/>
+  </rect>
+
+  <!-- ─── SCANLINE FLICKER OVERLAY ─── -->
+  <rect width="860" height="520" fill="#00ff41" opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0.04;0;0;0.02;0;0;0" dur="8s" repeatCount="indefinite" begin="0s"/>
+  </rect>
+</svg>
 
 <div align="center">
 
