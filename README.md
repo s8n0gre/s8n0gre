@@ -18,7 +18,7 @@
 class Developer:
     alias      = "s8n0gre"
     role       = "Software Engineering Student"
-    languages  = ["C++", "Java", "Python", "JavaScript"]
+    languages  = ["Java", "Python", "JavaScript"]
     focus      = ["Data Structures", "Algorithms", "System Design"]
     mindset    = "Chess-driven · Analytical · Relentless"
     goal_2026  = "300+ DSA problems"
