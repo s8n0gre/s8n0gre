@@ -69,37 +69,6 @@ class s8n0gre:
 
 ---
 
-<div align="center">
-  <h3>◈ &nbsp; 2026 Roadmap &nbsp; ◈</h3>
-</div>
-
-```yaml
-DSA:
-  target:   300+ problems
-  topics:   [ arrays, trees, graphs, dp, backtracking ]
-  approach: pattern recognition over brute force
-
-Dev:
-  goal:     ship projects — not just ideas
-  loop:     build  →  break  →  learn  →  repeat
-
-Mindset:
-  mode:     chess player — always 3 moves ahead
-  rule:     no zero days
-  exits:    0
-```
-
-</div>
----
-
-<div align="center">
-
-```
-  ╭──────────────────────────────────────────────────────╮
-  │  · · ·  every bug is a puzzle waiting to bloom  · · · │
-  ╰──────────────────────────────────────────────────────╯
-```
-
   <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=12&duration=3000&pause=1400&color=FFFFFF&center=true&vCenter=true&width=420&lines=%24+git+commit+-m+'consistent';%24+shutdown+--graceful;Session+logged.+See+you+tomorrow."/>
 
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0f,50:161b22,100:0a0a0f&height=72&section=footer"/>
