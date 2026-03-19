@@ -1,43 +1,25 @@
-name: generate snake
-
+# .github/workflows/snake.yml
+# ┌──────────────────────────────────────────────────────┐
+# │  REPTILE CONFIG — rainbow chromatic mode             │
+# └──────────────────────────────────────────────────────┘
+name: 🦎 Chromatic Reptile
 on:
-  schedule:
-    - cron: "0 3 * * *" 
+  schedule: [{ cron: "0 */12 * * *" }]
   workflow_dispatch:
-  push:
-    branches:
-      - main
+  push: { branches: [main] }
 
 jobs:
   generate:
-    permissions: 
-      contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
-    
-    # Optional: Forces the runner to use Node 24 right now to clear the warning
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
     steps:
-      # Updated to v6 (supports Node 24)
-      - name: checkout repository
-        uses: actions/checkout@v6
-
-      # Updated to v3.4.1+ (Platane/snk supports latest runtimes)
-      - name: generate snake graphics
-        uses: Platane/snk@v3
+      - uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: s8n0gre
+          github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # Updated to v5 (supports Node 24)
-      - name: push snake to the output branch
-        uses: crazy-max/ghaction-github-pages@v5
+            dist/snake-rainbow.svg?color_snake=rainbow&color_dots=#ff0000,#ff7700,#ffff00,#00ff00,#0000ff,#8b00ff&color_empty=#0d1117&color_filled=#39FF14
+      - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
