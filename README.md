@@ -4,10 +4,6 @@
 
 [![Visitors](https://komarev.com/ghpvc/?username=s8n0gre&style=flat-square&color=39FF14&labelColor=0d1117&label=VISITORS)](https://github.com/s8n0gre)
 &nbsp;
-[![Followers](https://img.shields.io/github/followers/s8n0gre?style=flat-square&color=39FF14&labelColor=0d1117&label=FOLLOWERS&logo=github)](https://github.com/s8n0gre)
-&nbsp;
-[![Stars](https://img.shields.io/github/stars/s8n0gre?style=flat-square&color=39FF14&labelColor=0d1117&label=STARS&logo=github)](https://github.com/s8n0gre)
-</div>
 
 ---
 
