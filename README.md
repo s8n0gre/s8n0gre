@@ -165,9 +165,6 @@ if __name__ == "__main__":
 ║  ► Python      ║  ► CSS3               ║  ► VS Code               ║
 ╚════════════════╩═══════════════════════╩══════════════════════════╝
 ```
-
-<img src="https://skillicons.dev/icons?i=cpp,java,python,js,html,css,git,github,vscode&theme=dark&perline=9" />
-
 <br/><br/>
 
 <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
