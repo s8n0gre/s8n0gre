@@ -89,6 +89,7 @@ Mindset:
   exits:    0
 ```
 
+</div>
 ---
 
 <div align="center">
