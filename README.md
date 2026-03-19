@@ -1,7 +1,11 @@
 <!-- HEADER -->
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=40&duration=4000&pause=2000&color=00E5FF&center=true&vCenter=true&width=900&height=120&lines=s8n0gre" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0F2027,100:2C5364&height=140&section=header&animation=fadeIn" />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=42&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=800&lines=s8n0gre" />
 </p>
 
 <!-- TITLE -->
