@@ -7,14 +7,6 @@
 <img src="https://raw.githubusercontent.com/s8n0gre/s8n0gre/main/dedsec_banner.svg" alt="DedSec Animated Banner" width="100%"/>
 
 </div>
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/s8n0gre/s8n0gre/main/dedsec_banner.svg" width="100%"/>
-
-</div>
-
-
 <div align="center">
 
 [![Profile Views](https://komarev.com/ghpvc/?username=s8n0gre&style=for-the-badge&color=39FF14&labelColor=0d1117&label=VISITORS)](https://github.com/s8n0gre)
