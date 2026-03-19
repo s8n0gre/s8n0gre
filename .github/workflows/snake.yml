@@ -3,37 +3,40 @@ name: generate snake
 on:
   schedule:
     - cron: "0 3 * * *" # Runs every day at 3:00 AM
-  workflow_dispatch:
+  workflow_dispatch: # Allows manual trigger from the Actions tab
   push:
     branches:
-      - main
-
-permissions:
-  contents: write
+      - main # Runs whenever you push to main
 
 jobs:
-  snake:
+  generate:
+    permissions: 
+      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 5
-
+    
     steps:
+      # Use v4 (latest stable) to avoid Node.js deprecation warnings
       - name: checkout repository
         uses: actions/checkout@v4
 
+      # Use v3 (latest stable) for the snake generator
       - name: generate snake graphics
         uses: Platane/snk@v3
         with:
           github_user_name: s8n0gre
           outputs: |
-            dist/snake-dark.svg?palette=github-dark&color_snake=00E5FF&color_dots=#0D1117,#161B22,#1F6FEB,#00E5FF,#7EE787
-            dist/snake-light.svg?palette=github-light&color_snake=007CF0&color_dots=#FFFFFF,#EAEEF2,#79C0FF,#007CF0,#0059B3
-            dist/snake-grid.svg?color_snake=FF6B6B&color_dots=#0D1117,#2D333B,#FF6B6B,#FFA657,#FFD580
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          # Ensure the generator has access to fetch your contribution data
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: deploy to branch
+      # Deploy using the official GitHub Pages action (v4 is the current standard)
+      - name: push snake to the output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
-          commit_message: "update: snake animation"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
