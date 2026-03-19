@@ -1,8 +1,9 @@
 <!-- HEADER -->
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0F2027,100:2C5364&height=140&section=header&animation=fadeIn" />
+  <img src="https://svg-banners.vercel.app/api?type=origin&text1=s8n0gre&width=900&height=200&fontSize=48&fontColor=E6EDF3&animation=fadeIn&background=0F2027,203A43,2C5364" />
 </p>
+
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=42&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=800&lines=s8n0gre" />
