@@ -1,14 +1,14 @@
 <!-- HEADER -->
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=40&duration=4000&pause=2000&color=00E5FF&center=true&vCenter=true&width=900&height=120&lines=s8n0gre" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Source+Code+Pro&size=34&duration=2000&pause=800&color=00FF41&background=0D111700&center=true&vCenter=true&width=900&height=120&lines=%3E+Initializing...;%3E+Access+Granted;%3E+s8n0gre" />
 </p>
-
-
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=42&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=800&lines=s8n0gre" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:001a00&height=160&section=header&text=SYSTEM%20ONLINE&fontSize=22&fontColor=00FF41&animation=fadeIn" />
 </p>
+
+
 
 <!-- TITLE -->
 
