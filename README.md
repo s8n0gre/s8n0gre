@@ -131,16 +131,6 @@ if __name__ == "__main__":
 
 <div align="center">
 
-```
-╔══════════════════════════════════════════════════════════════════╗
-║        >_ REPTILE TRACKER  //  git push && the beast feeds      ║
-╠══════════════════════════════════════════════════════════════════╣
-║                                                                  ║
-║    🟥🟧🟨🟩🟦🟪  CHROMATIC SERPENT ACTIVATED  🟪🟦🟩🟨🟧🟥    ║
-║                                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
-```
-
 <picture>
   <source media="(prefers-color-scheme: dark)"
     srcset="https://raw.githubusercontent.com/s8n0gre/s8n0gre/output/github-contribution-grid-snake-dark.svg" />
@@ -152,39 +142,7 @@ if __name__ == "__main__":
     width="100%" />
 </picture>
 
-> To enable the **rainbow reptile**, add this to `.github/workflows/snake.yml`:
-
 </div>
-
-```yaml
-# .github/workflows/snake.yml
-# ┌──────────────────────────────────────────────────────┐
-# │  REPTILE CONFIG — rainbow chromatic mode             │
-# └──────────────────────────────────────────────────────┘
-name: 🦎 Chromatic Reptile
-on:
-  schedule: [{ cron: "0 */12 * * *" }]
-  workflow_dispatch:
-  push: { branches: [main] }
-
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/snake-rainbow.svg?color_snake=rainbow&color_dots=#ff0000,#ff7700,#ffff00,#00ff00,#0000ff,#8b00ff&color_empty=#0d1117&color_filled=#39FF14
-      - uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
 
 <br/>
 
