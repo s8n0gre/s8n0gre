@@ -1,13 +1,8 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/s8n0gre/s8n0gre/main/dedsec_banner.svg" width="100%" alt="s8n0gre"/>
   <br/>
-  <a href="https://github.com/s8n0gre"><img src="https://komarev.com/ghpvc/?username=s8n0gre&style=flat-square&color=ffffff&labelColor=161b22&label=VISITORS"/></a>
+  <a href="https://github.com/s8n0gre"><img src="https://komarev.com/ghpvc/?username=s8n0gre&style=flat-square&color=000000&labelColor=161b22&label=VISITORS"/></a>
   &nbsp;
-  <a href="https://github.com/s8n0gre?tab=followers"><img src="https://img.shields.io/github/followers/s8n0gre?style=flat-square&color=ffffff&labelColor=161b22&label=FOLLOWERS&logo=github&logoColor=white"/></a>
-  &nbsp;
-  <a href="https://github.com/s8n0gre"><img src="https://img.shields.io/github/stars/s8n0gre?style=flat-square&color=ffffff&labelColor=161b22&label=STARS&logo=github&logoColor=white"/></a>
-</div>
-
 <br/>
 
 ---
@@ -70,8 +65,6 @@ class s8n0gre:
 
   <img src="https://leetcard.jacoblin.cool/lTBHxYIRt2?theme=dark&font=source_code_pro&ext=heatmap&border=0&radius=4&width=495&colors=0d1117,161b22,ffffff,ffffff,c9d1d9,ffffff,888888,cccccc,ffffff" alt="LeetCode Stats"/>
   &nbsp;
-  <img src="https://leetcard.jacoblin.cool/lTBHxYIRt2?theme=dark&font=source_code_pro&ext=contest&border=0&radius=4&width=495&colors=0d1117,161b22,ffffff,ffffff,c9d1d9,ffffff,888888,cccccc,ffffff" alt="LeetCode Contest"/>
-</div>
 
 ---
 
