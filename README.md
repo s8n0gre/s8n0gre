@@ -23,14 +23,16 @@
 </p>
 
 ---
-
 ## Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=cpp,java,python,js,html,css,git,github&theme=light" />
+  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="60"/>
+  <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" width="60"/>
+  <img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" width="60"/>
+  <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" width="60"/>
+  <img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="60"/>
 </p>
 
----
 
 ## GitHub Metrics
 
