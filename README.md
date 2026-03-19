@@ -133,12 +133,12 @@ if __name__ == "__main__":
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/s8n0gre/s8n0gre/output/github-contribution-grid-snake-dark.svg" />
+    srcset="https://raw.githubusercontent.com/s8n0gre/s8n0gre/output/pacman-dark.svg" />
   <source media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/s8n0gre/s8n0gre/output/github-contribution-grid-snake.svg" />
+    srcset="https://raw.githubusercontent.com/s8n0gre/s8n0gre/output/pacman.svg" />
   <img
-    alt="contribution reptile"
-    src="https://raw.githubusercontent.com/s8n0gre/s8n0gre/output/github-contribution-grid-snake.svg"
+    alt="pacman devouring contributions"
+    src="https://raw.githubusercontent.com/s8n0gre/s8n0gre/output/pacman.svg"
     width="100%" />
 </picture>
 
