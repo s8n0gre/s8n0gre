@@ -51,8 +51,11 @@ class Developer:
 >_ TECH ARSENAL  ···  MODULES LOADED
 ```
 
+<img src="https://skillicons.dev/icons?i=cpp,java,python,js,html,css,git,github,vscode&theme=dark&perline=9"/>
+
 <br/>
 
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
@@ -94,7 +97,22 @@ class Developer:
 
 ---
 
-<!-- DSA + OBJECTIVES merged -->
+<!-- LEETCODE -->
+<div align="center">
+
+```
+>_ LEETCODE TERMINAL  ···  lTBHxYIRt2
+```
+
+<img src="https://leetcard.jacoblin.cool/lTBHxYIRt2?theme=dark&font=source_code_pro&ext=heatmap&border=0&radius=4&width=500&colors=0d1117,161b22,39FF14,39FF14,c9d1d9,39FF14,ff7b72,ffa657,39FF14" alt="LeetCode Stats"/>
+
+<img src="https://leetcard.jacoblin.cool/lTBHxYIRt2?theme=dark&font=source_code_pro&ext=contest&border=0&radius=4&width=500&colors=0d1117,161b22,39FF14,39FF14,c9d1d9,39FF14,ff7b72,ffa657,39FF14" alt="LeetCode Contest"/>
+
+</div>
+
+---
+
+<!-- DSA + OBJECTIVES -->
 <div align="center">
 
 ```
@@ -105,15 +123,6 @@ class Developer:
 
 ```
 ╔══════════════════════════════════════════════════════════════════╗
-║  DSA PROGRESS                                                    ║
-╠══════════════════════════════════════════════════════════════════╣
-║  Arrays        ████████████████░░░░░░░░░░░░  [ACTIVE]           ║
-║  Linked Lists  ██████████████░░░░░░░░░░░░░░  [ACTIVE]           ║
-║  Trees         ████████████░░░░░░░░░░░░░░░░  [IN PROGRESS]      ║
-║  Graphs        ████████░░░░░░░░░░░░░░░░░░░░  [LOADING...]       ║
-║  Dynamic Prog  ██████░░░░░░░░░░░░░░░░░░░░░░  [UNLOCKING...]     ║
-║  Backtracking  █████░░░░░░░░░░░░░░░░░░░░░░░  [QUEUED]           ║
-╠══════════════════════════════════════════════════════════════════╣
 ║  FOCUS MATRIX                                                    ║
 ╠═══════════════════╦══════════════════╦═══════════════════════════╣
 ║  DSA              ║  [##########]    ║  CRITICAL                 ║
